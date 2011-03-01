@@ -1,0 +1,1 @@
+cat node-$1/haggle.log | grep -i $2 
