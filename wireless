@@ -1,0 +1,5 @@
+#! /bin/bsh
+
+sudo iwconfig wlan0 essid key e9Qx2 
+#BTHomeHub-412E key db68b7f93d
+sudo dhclient wlan0

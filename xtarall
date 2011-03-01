@@ -1,0 +1,25 @@
+#!/bin/sh
+
+#for tarfile in `ls *.tar.gz`; do
+# 	tar zxvf $tarfile
+#done 
+
+rm -rf restar
+rm restar.tar.gz
+
+mkdir restar		
+
+for (( i = 1; i <= 8; i++ )); do
+	if [[ -d "$i" ]] ; then
+		echo "$i"
+		cd "$i"
+		tar zcvf "$i.tar.gz" *.eps
+		#mkdir ../restar		
+		cp $i.tar.gz ../restar
+		cd ..
+	fi
+done
+
+	tar zcvf restar.tar.gz restar
+	cp restar.tar.gz ~
+	

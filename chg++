@@ -1,0 +1,12 @@
+#! /bin/sh
+
+if [ -f /usr/bin/g++ ]; then
+	ls /usr/bin/g++
+	rm /usr/bin/g++
+fi
+
+if [ $1 -eq 3 ]; then
+	ln /usr/bin/g++-4.3 /usr/bin/g++
+else
+	ln /usr/bin/g++-4.4 /usr/bin/g++
+fi

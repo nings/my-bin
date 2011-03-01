@@ -1,0 +1,2 @@
+tar zcvf $1.tar.gz *.eps
+mv $1.tar.gz ~
