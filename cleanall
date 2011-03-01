@@ -1,0 +1,7 @@
+#!/bin/bsh
+
+for xf in `ls`; do
+	cd $xf;
+	make clean;
+	cd ..;
+done
