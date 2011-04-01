@@ -4,7 +4,7 @@ for tarfile in `ls *.tar.gz`; do
  	tar zxvf $tarfile
 done 
 
-for (( i = 1; i <= 8; i++ )); do
+for (( i = 1; i <= 18; i++ )); do
 	if [[ -d "$i" ]] ; then
 		echo "$i"
 		cd "$i"

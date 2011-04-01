@@ -1,1 +1,18 @@
-time sh /media/file/haggle/haggle-testbed/scripts/plot/analysis.sh
+#! /bin/sh
+case $1 in
+	1)
+	rm *.db
+	rm *.sqlite
+	time sh /home/amc/plot/createdb.sh
+	;;
+	2)
+	time sh /home/amc/plot/delay.sh
+	;;
+	3)
+	time sh /home/amc/plot/match.sh
+	;;
+	*)
+	time sh /home/amc/plot/analysis.sh
+	;;
+esac
+
