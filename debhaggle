@@ -1,0 +1,1 @@
+sudo aptitude install build-essential automake autoconf libtool libsqlite3-dev libxml2-dev libbluetooth-dev libdbus-1-3 libdbus-1-dev libssl-dev
