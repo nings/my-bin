@@ -1,0 +1,1 @@
+scp $1 nw312@slogin-serv.cl.cam.ac.uk:down
