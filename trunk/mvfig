@@ -1,0 +1,7 @@
+mkdir Closeness
+mkdir J-Algorithm
+cp 2/tmp-hop-ccdf J-Algorithm/hop-KClique
+cp 4/tmp-hop-ccdf Closeness/hop-KClique
+cp 1/tmp-hop-ccdf J-Algorithm/hop-Fiedler
+cp 3/tmp-hop-ccdf Closeness/hop-Fiedler
+
