@@ -1,0 +1,2 @@
+#! /bin/sh
+for x in `ls .`; do cd $x; pwd; gnuplot gplot; cd ..; done

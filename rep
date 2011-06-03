@@ -1,0 +1,16 @@
+#! /bin/sh
+
+for xd in `ls`
+do
+echo $xd
+cd $xd
+for (( i = 1; i <= 4; i++ )); do
+	cd $i
+
+sed -i 's/AppRunByOrder/AppRunBySce/g' scenario.xml
+sed -i 's/10000/1000000/g' scenario.xml
+
+	cd ..
+done
+cd ..
+done
